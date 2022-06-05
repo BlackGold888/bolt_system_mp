@@ -1,5 +1,22 @@
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .App-logo {
@@ -35,4 +52,121 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  position: relative;
+  padding: 70px 50px;
+  width: auto;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px;
+}
+
+.product{
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.product__image{
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.product__image img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.product__desc{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+}
+
+.cb-bolt-btn-action {
+  border: unset;
+  text-align: center;
+  border-radius: 100px;
+  padding: 6px 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #f4f5f6;
+  color: #2f313f;
+  text-transform: capitalize;
+}
+
+.cb-bolt-btn-primary {
+  background-color: #34d186;
+  color: #fff;
+}
+
+.product_price{
+  background-color: transparent;
+  border: unset;
+  text-align: center;
+  border-radius: 100px;
+  padding: 6px 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #2f313f;
+  text-transform: capitalize;
+}
+
+.logo{
+  position: absolute;
+  top: -50px;
+  right: 0;
+}
+
+.products_box{
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+hr.line{
+  border-top: 1px solid rgba(52, 209, 134, 0.41);
+  margin: 10px;
+}
+
+.actionButtons{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.link{
+  display: block;
+  margin: 10px;
+}
+
+.back-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+a{
+  text-decoration: none;
+  transition: all .3s;
+}
+
+a:hover{
+  background-color: #2f313f;
+  transition: all .3s;
 }
